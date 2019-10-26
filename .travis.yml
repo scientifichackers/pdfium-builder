@@ -2,4 +2,6 @@ os: osx
 jobs:
   include:
     - stage: test
-      script: uname -a
+      script: 
+        - uname -a
+        - python2 --version
