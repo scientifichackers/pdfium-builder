@@ -1,4 +1,4 @@
-osx: osx
+os: osx
 jobs:
   include:
     - stage: test
