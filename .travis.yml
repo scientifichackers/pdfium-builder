@@ -1,4 +1,8 @@
 os: osx
+cache:
+  directories:
+  - depot_tools
+  - repo
 jobs:
   include:
     - script: ./osx.sh
