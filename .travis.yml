@@ -1,0 +1,5 @@
+osx: osx
+jobs:
+  include:
+    - stage: test
+      script: uname -a
