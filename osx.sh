@@ -14,8 +14,8 @@ else
 fi
 export PATH="$PATH:$PWD/depot_tools"
 
-#
-mkdir repo
+# get pdfium code
+mkdir -p repo
 cd repo
 gclient config --unmanaged "https://pdfium.googlesource.com/pdfium.git"
 gclient sync
