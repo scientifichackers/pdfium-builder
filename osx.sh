@@ -7,7 +7,7 @@ set -xe
 if [ -d "depot_tools" ]; then
     cd depot_tools 
     git fetch
-    git pull 
+    git pull origin master
     cd ..
 else
     git clone "https://chromium.googlesource.com/chromium/tools/depot_tools.git" depot_tools
