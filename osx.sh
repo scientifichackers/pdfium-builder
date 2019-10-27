@@ -4,14 +4,13 @@ export PS4="\n$ "
 set -xe
 
 # install depot_tools
-if [ -d "depot_tools" ]; then
-    cd depot_tools 
-    git fetch
-    git pull origin master
-    cd ..
-else
-    git clone "https://chromium.googlesource.com/chromium/tools/depot_tools.git" depot_tools
-fi
+(
+  git clone "https://chromium.googlesource.com/chromium/tools/depot_tools.git" depot_tools || true
+  cd depot_tools
+  git fetch
+  git pull origin master
+)
+
 export PATH="$PWD/depot_tools:$PATH"
 
 ls -la depot_tools
