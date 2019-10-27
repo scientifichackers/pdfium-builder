@@ -25,4 +25,4 @@ mkdir -p out/build
 gn gen out/build
 
 # run ninja build
-ninja -C out/build pdfium_all.
+ninja -C out/build pdfium_all
