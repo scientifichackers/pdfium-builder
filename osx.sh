@@ -12,7 +12,11 @@ if [ -d "depot_tools" ]; then
 else
     git clone "https://chromium.googlesource.com/chromium/tools/depot_tools.git" depot_tools
 fi
-export PATH="$PATH:$PWD/depot_tools"
+export PATH="$PWD/depot_tools:$PATH"
+
+ls -la depot_tools
+env
+ls -la depot_tools/gclient
 
 # get pdfium code
 mkdir -p repo
