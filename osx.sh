@@ -22,6 +22,7 @@ cd pdfium
 
 # configure build
 mkdir -p out/build
+cp args.gn out/build
 gn gen out/build
 
 # run ninja build
